@@ -1,3 +1,7 @@
+//Author: Alexander Brehov 
+//All copyright reserved
+
+
 country_json = "";
 arr = [
   "AX",
@@ -1040,6 +1044,13 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
     }
     h4out.textContent = time;
+    // let str = h4out.textContent
+    // p = new Date(
+    //   parseInt(str[0]+str[1]+str[2]+str[3]),
+    //   parseInt(str[5]+str[6])-1,
+    //   parseInt(str[8]+str[9])
+    // )
+    // h4out.textContent=p.getFullYear() + '-' + Month[p.getMonth()] + '-' + p.getDay() +' ' + time[11] + time[12] + ':' + time[14] + time[15] + ':' + time[17] + time[18]
     getJSON();
   };
 });
