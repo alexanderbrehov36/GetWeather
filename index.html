@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+<head>
+	<title>GetWeather</title>
+	<meta charset="Utf-8">
+	<link rel='stylesheet' type="text/css" href="scripts/reset.css">
+	<link rel='stylesheet' type="text/css" href="scripts/bootstrap.min.css">
+	<script src="scripts/axios.min.js"></script>
+	<script src="scripts/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	
+
+</head>
+<body>
+	<div class = 'cointainer'>
+		<div class="row justify-content-md-center">
+			<div class="col-md-auto text-center">
+				<h1>Weather</h1>
+			</div>
+		</div>
+	<div class="row justify-content-md-center align-items-center">
+	<div class="col">
+		<div class='card align-items-left text-center'>
+			<button id = 'butt' class='btn btn-light' onclick="newcity()">Add city</button>
+		</div>
+	</div>
+	<div class="col">
+		<div class = 'card'>
+			<div class ="card-body">
+				<div class="row justify-content-md-center">
+					<div id="weather" class="col wea">
+						<h5 class="params card-title" > -- 'C</h5>
+						<h6 class="params card-title"> -- hPa</h6>
+						<h6 class="params card-title">Wind derection: --</h6>
+					</div>
+					<div id="weathers-img" class="col">
+						
+					</div>
+					<div class='slider' id='slider'>
+						<h4 id='sliderout'>
+							
+						</h4>
+						<input type="range" name = 'testrange' id= 'sl' class='sl form-range' min='1' max='27' value = 1>
+					</div>
+<!-- 					<div  id = 'mydrop'>
+						<input type="text" name="test" onkeyup="filter()" id='testin' placeholder='Type name of city'>
+						 <ul id = 'ul'></ul> 
+						<li href='artem' class='c'>Артём</li>
+						<li href='vladivostok' class='c'>Владивосток</li>
+						<li href='arhangelsk' class='c'>Архангельск</li> 
+						
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	</div>
+	</div>
+</div>
+</body>
+</html>
